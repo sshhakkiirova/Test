@@ -3,6 +3,21 @@
 extends layout
 
 block content
-    h3= title
-    p Welcome to #{title} Section
+    div.row
+        div.col-lg-4.col-lg-offset-4
+            h3 ADMIN ACCESS
+    div.row
+            div.col-lg-4
+            div.col-lg-4
+                form(name="admin", method="post")
+                    div.form-group
+                        label E-mail
+                        input.form-control(type="text", name="mail")
+                    div.form-group
+                        label Password
+                        input.form-control(type="password", name="pass")
+                    button.btn.btn-default(type="submit", value="Log in") Sign in
+
+
+
 
